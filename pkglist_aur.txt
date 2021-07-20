@@ -1,0 +1,4 @@
+font-manager
+local-by-flywheel-bin
+nerd-fonts-fira-code
+yay
