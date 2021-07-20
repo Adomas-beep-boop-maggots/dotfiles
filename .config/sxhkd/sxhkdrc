@@ -1,0 +1,20 @@
+super + shift + m
+	$HOME/bin/play "$(xclip -o)" v
+super + shift + n
+	$HOME/bin/play "$(xclip -o)" m
+super + Pause
+	echo cycle pause   | socat - /tmp/mpvsocket
+super + Scroll_Lock
+	echo playlist_next | socat - /tmp/mpvsocket
+super + Print
+	echo playlist_prev | socat - /tmp/mpvsocket
+super + Pause
+	echo playlist-shuffle | socat - /tmp/mpvsocket
+super + Return
+  xfce4-terminal
+Print
+  flameshot gui
+super + Escape
+  pkill -KILL -u $USER
+super + F1
+  chromium

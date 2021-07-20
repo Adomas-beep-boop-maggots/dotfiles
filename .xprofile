@@ -1,0 +1,3 @@
+sxhkd -c ~/.config/sxhkd/sxhkdrc &
+mpv --no-video --idle --no-terminal --input-ipc-server=/tmp/mpvsocket &
+dwmstatus &

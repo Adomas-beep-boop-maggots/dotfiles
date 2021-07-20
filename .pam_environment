@@ -1,0 +1,4 @@
+SUDO_EDITOR=/usr/bin/nvim
+EDITOR=/usr/bin/nvim
+PAGER=less
+BROWSER=/usr/bin/chromium 
