@@ -1,0 +1,15 @@
+#!/bin/sh
+vplay="mpv" 
+mplay="socat - /tmp/mpvsocket"
+title=`youtube-dl --skip-download --get-title "$1"`
+if [ "$2" = "m" ]; then
+	notify-send 'Loading music for:'"$title"
+	echo loadfile "$1" | eval "$mplay"
+elif [ "$2" = "v" ]; then
+	notify-send 'Loading video for:'"$title"
+	eval "$vplay" "$1"
+fi
+	
+#title=`youtube-dl --skip-download --get-title "https://www.youtube.com/watch?v=3sUDa5GdCTI&t=192s"`
+#echo loadfile "https://www.youtube.com/watch?v=3sUDa5GdCTI&t=192s" | eval "$mplay"
+
