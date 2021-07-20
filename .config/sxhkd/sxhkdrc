@@ -1,7 +1,7 @@
 super + shift + m
-	$HOME/bin/play "$(xclip -o)" v
+	$HOME/.local/bin/play "$(xclip -o)" v
 super + shift + n
-	$HOME/bin/play "$(xclip -o)" m
+	$HOME/.local/bin/play "$(xclip -o)" m
 super + Pause
 	echo cycle pause   | socat - /tmp/mpvsocket
 super + Scroll_Lock
